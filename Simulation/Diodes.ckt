@@ -1,17 +1,16 @@
 * Данный файл хранти в себе модели диодов
 
-
-
 * BAR43FILM
 * Device with two serial diodes
 
 .SUBCKT BAR43FILM A2 K1 A1K2
 
-* Connections
-D1 A1K2 K1 INTERNAL_DIODE
-D2 A2 A1K2 INTERNAL_DIODE
+	* Connections
+	D1 A1K2 K1 INTERNAL_DIODE
+	D2 A2 A1K2 INTERNAL_DIODE
 
-.MODEL INTERNAL_DIODE D (BV=30 IS=500n EG=0.69 XTI=2 CJO=7p)
-
+	.MODEL INTERNAL_DIODE D (BV=30 IS=500n EG=0.69 XTI=2 CJO=7p)
 .ENDS
+
+
 

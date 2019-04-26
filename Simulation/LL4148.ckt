@@ -1,0 +1,11 @@
+* LL4148
+* Common pulse diode
+
+.SUBCKT LL4148 A C
+
+	* Connections
+	D1 A C DIODE_LL4148
+
+	*modeles
+	.model DIODE_LL4148 D (IS=25n RS=0 BV=100 IBV=5.00u CJO=4p TT=4n)
+.ENDS 

@@ -1,0 +1,11 @@
+* Copyright © Linear Technology Corp. 1998, 1999, 2000.  All rights reserved.
+* For PC817A 1m, PC817B 1.5m
+.subckt PC817 1 2 3 4
+	R1 N003 2 2
+	D1 1 N003 LD
+	G1 3 N004 N003 2 {1m}
+	C1 1 2 18p
+	Q1 3 N004 4 [4] NP
+	.model LD D(Is=1e-20 Cjo=18p)
+	.model NP NPN(Bf=1200 Vaf=140 Ikf=100m Rc=1 Cjc=19p Cje=7p Cjs=7p)
+.ends
